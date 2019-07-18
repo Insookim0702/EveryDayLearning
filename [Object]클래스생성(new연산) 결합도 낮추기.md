@@ -50,6 +50,7 @@ AmountDiscountPolicy 메서드 인자가 변경된다면, 당연히 Movie 클래
         this.discountPolicy=discountPolicy;
     }
 }
+```
 다음 코드에서 알아야 하는 것.
 > 1. Movie는 AmountDiscountPolicy 인스턴스를 직접 생성하지 않는다. 사용만 할거다.
 > 2. AmountDiscountPolicy 인스턴스는 누가 생성하는가? Movie의 클라이언트가 처리한다. 
