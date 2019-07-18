@@ -42,8 +42,9 @@ AmountDiscountPolicy 메서드 인자가 변경된다면, 당연히 Movie 클래
 
 > 올바르게 객체가 오로지 메시지만 전달하는 역할을 하게 작성해보면..
 > 다음 코드는 생성자를 통해 외부의 인스턴스를 전달받아 의존성을 해결하는 Movie의 코드이다.
-> ```
-> public class Movie{
+> 
+```
+ public class Movie{
     private DiscountPolicy discountPolicy;
     //@생성자
     public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy){
@@ -51,15 +52,20 @@ AmountDiscountPolicy 메서드 인자가 변경된다면, 당연히 Movie 클래
     }
 }
 ```
+>
+
+
 다음 코드에서 알아야 하는 것.
 > 1. Movie는 AmountDiscountPolicy 인스턴스를 직접 생성하지 않는다. 사용만 할거다.
 > 2. AmountDiscountPolicy 인스턴스는 누가 생성하는가? Movie의 클라이언트가 처리한다. 
 > 3. Movie는 단지 메시지를 전송한다.
 
 Movie 클라이언트
-> ```
-> Movie JohnWick = new Movie("존윅", Duration.ofMinutes(120), new AmountDiscountPolicy(Money.wons(800), new SequenceCondition...));
-> ```
+> 
+```
+ Movie JohnWick = new Movie("존윅", Duration.ofMinutes(120), new AmountDiscountPolicy(Money.wons(800), new SequenceCondition...));
+```
+>
 
 사용과 생성의 책임을 분리한 예이다. 결론적으로는 결합도가 낮아진다.
 
