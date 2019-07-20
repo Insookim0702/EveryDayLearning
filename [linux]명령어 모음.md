@@ -1,19 +1,19 @@
-#### 1. tar.gz 압축 풀기
+### tar.gz 압축 풀기
 ```
 $ tar xvfz jdk-8u211-linux-x64.tar.gz
 ```
 
-#### 2. zip 압축 풀기
+### zip 압축 풀기
 ```
 $ unzip 압푹파일.zip -d ./하위폴더명
 ```
 
 
-#### 3. jdk 설치하기
+### jdk 설치하기
 * 방법 1. apt-get install oracle-java8-installer (패키지 후보에 없다는 오류 떠서 실패)
 * 방법 2. [오라클 홈페이지 접속](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) > jdk1.8.0.tar.gz 다운로드 > tar xvgf ..(잘 됨)
 
-#### 4. jdk 환경 설정
+### jdk 환경 설정
 1) jdk1.8.0 **디렉토리** 설치 경로 확인
 ``` /usr/lib/jvm/jdk.1.8.0.221 ```
 2) ``` $ vi /etc/profile ```
@@ -30,7 +30,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/tools.jar
 ``` . /etc/profile ``` 로 위기를 모면한다.
 
 
-#### port PID 찾아서 Kill 로 죽이기
+### port PID 찾아서 Kill 로 죽이기
 우리 회사 솔루션은 솔루션 서버가 사용하는 port가 많다. port가 가끔 중복으로 잡히면 오류난다.
 1) port를 사용하는 프로세스 ID(PID)를 찾기
 ``` $ ps -ef | grep 프로세스명 ```
