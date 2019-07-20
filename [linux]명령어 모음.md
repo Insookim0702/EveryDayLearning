@@ -37,6 +37,6 @@ export CLASSPATH=.:$JAVA_HOME/lib/tools.jar
 ![pid는 두번째](https://user-images.githubusercontent.com/42515875/61578388-25f3e980-ab31-11e9-9c82-2092aea329b6.png)
 <br>
 pid는 두번째 열의 숫자이다.
-2) pid를 알았다면, <span style="background-color:#00000">kill -9 pid번호</span>
-``` $ kill -9 3892 ```를 하면, 3892의 PID를 가지는 프로세스가 종료되면서 잡고 있던 port도 놓게 된다.
+2) pid를 알았다면, ```$ kill -9 pid번호```
+```$ kill -9 3892``` 를 하면, 3892의 PID를 가지는 프로세스가 종료되면서 잡고 있던 port도 놓게 된다.
 
