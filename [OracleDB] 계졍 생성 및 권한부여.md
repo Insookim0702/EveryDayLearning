@@ -19,6 +19,7 @@ SELECT * FROM DBA_USERS;
 ```
 grant create table, create session to 계정이름;
 ```
+![grant create table, create session to schfom;](https://user-images.githubusercontent.com/42515875/61592426-0252a100-ac0e-11e9-8cec-3d70131c3014.png)
 
 * 계정 접근 권한 부여
 ```
