@@ -8,6 +8,15 @@ $ tar xvfz jdk-8u211-linux-x64.tar.gz
 $ unzip 압푹파일.zip -d ./하위폴더명
 ```
 
+### 디렉토리 복사해서 다른 디렉토리로 이동
+```
+$ cp -r 디렉토리이름 이동시킬 디렉토리이름
+```
+ex)
+``` 
+$ cp -r webapps ../manager
+```
+manager/webapps가 된다.
 
 ### jdk 설치하기
 * 방법 1. apt-get install oracle-java8-installer (패키지 후보에 없다는 오류 떠서 실패)
