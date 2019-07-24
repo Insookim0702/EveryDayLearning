@@ -14,7 +14,7 @@ node.js 다운로드 [홈페이지](https://nodejs.org/en/)에 접속하여 다�
   ![](https://user-images.githubusercontent.com/42515875/61801620-0b3fae80-ae6a-11e9-9966-02697e290086.png)
   3) 설치 후 server.js 파일을 생성하고 다음 코드를 작성하여 크롬에 글자를 출력해보는 서버 스크릡트를 짜본다.
     
-    ```
+ ``` 
     var express = require('express');
     var app = express();
     app.get('/servercheck', function(req, res){
@@ -22,12 +22,9 @@ node.js 다운로드 [홈페이지](https://nodejs.org/en/)에 접속하여 다�
     });
     app.listen(3000, function(){
       console.log('서버 정상 작동 중...');
-    })
-    ```
- ![](https://user-images.githubusercontent.com/42515875/61801622-0bd84500-ae6a-11e9-9ff5-98e2e34c80b6.png)
-
-
+    })   
+ ```
 
 ### 4. 크롬으로 서버 작동확인하기
 ```node server.js```를 터미널창에서 실행하면 console로그로 ```'서버 정상 작동 중...'```이 출력된다.
-
+![](https://user-images.githubusercontent.com/42515875/61801622-0bd84500-ae6a-11e9-9ff5-98e2e34c80b6.png)
