@@ -37,7 +37,11 @@ node.js 다운로드 [홈페이지](https://nodejs.org/en/)에 접속하여 다�
 
 ### 4. MongoDB 설치하기
 터미널(vscode) 또는 window cmd창에서 다음 명령어로 Mongoose 모듈을 설치할 수 있다.
+
+
 ```npm install -save mongodb mongoose```
+
+
 ![](https://user-images.githubusercontent.com/42515875/61801619-0b3fae80-ae6a-11e9-95f0-2c66c2579af1.png)
 
 
