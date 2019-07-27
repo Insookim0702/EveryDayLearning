@@ -63,13 +63,4 @@ Mongoose는 MongoDB와 Node.js에서 사용하는 ODM(Object Data Mapping) 라�
 ![RelationOfNodeMongoDBMongoose](https://cdn-images-1.medium.com/max/1024/0*b5piDNW1dqlkJWKe.)
 
 
-# MongoDB 뭐와 쓰면 좋은지
-
-# MongoDB 어디에 쓰면 좋은지
-
-# MongoDB 어떻게 쓰는지
-
-
-
-
 [공부 참조 글](https://www.codementor.io/theoutlander/introduction-to-mongoose-for-mongodb-gw9xw34el)
