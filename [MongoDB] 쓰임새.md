@@ -29,7 +29,8 @@
 ``` db.컬렉션명.insert(document)```
 
 ## 조회
-``` db.컬렉션명.find([query, projection]).pretty```
+~~~ db.컬렉션명.find([query, projection]).pretty~~~
+
 .pretty 옵션은 출력결과를 한 줄이 아닌 JSON형식을 갖추어서 출력한다.
 
 ## 제거
