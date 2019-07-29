@@ -26,15 +26,37 @@
 # Document에서 명령문
 
 ## 생성
-``` db.컬렉션명.insert(document)```
+``` 
+db.컬렉션명.insert(document)
+```
 
 ## 조회
 ~~~ 
 db.컬렉션명.find([query, projection]).pretty
 ~~~
-
 .pretty 옵션은 출력결과를 한 줄이 아닌 JSON형식을 갖추어서 출력한다.
-
+ex) name이 homer인 것을 조회
+```javascript
+db.person.find({"name":"homer"}).pretty
+```
+```
+{
+    name : homer,
+    age  : 45,
+    address  : springfield
+}
+```
+ex) age가 30 이하인 것을 조회
+```javascript
+db.person.find({"age" : {$lte : 30}}).pretty
+```
+```
+{
+    name : botton,
+    age  : 10,
+    address  : springfield
+}
+```
 ## 제거
 ```
 db.컬렉션명.remove(criteria[, justOne])
@@ -45,14 +67,13 @@ db.컬렉션명.remove(criteria[, justOne])
 
 
 # 쿼리 연산자
-## 비교연산자
-
-* $eq  - 주어진 값과 같은 값.
-* $gt - 주어진 값보다 큰 값.
-* $gte - 주어진 값보다 크거나 같은 값.
-* $lt - 주어진 값보다 작은 값.
-* $lte - 주어진 값보다 작거나 같은 값.
-* $ne - 주어진 값과 일치하지 않는 값.
+## 비교(Comparison)연산자
+* $eq  - (equals)주어진 값과 같은 값.
+* $gt - (greater than)주어진 값보다 큰 값.
+* $gte - (greater than or equals)주어진 값보다 크거나 같은 값.
+* $lt - (less than)주어진 값보다 작은 값.
+* $lte - (less than or equals)주어진 값보다 작거나 같은 값.
+* $ne - ()주어진 값과 일치하지 않는 값.
 * $in  - 주어진 배열 안에 속하는 값.
 * $nin - 주어진 배열안에 속하지 않는 값.
 
