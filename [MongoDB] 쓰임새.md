@@ -12,21 +12,29 @@
 
 # Collection에서 명령문
 ## 생성
-``` db.createCollection(name, [options])```
+```javascript 
+db.createCollection(name, [options])
+```
 
 ## 조회
-``` show collections```
+```javascript
+show collections
+```
 
 ## 제거
-``` db.컬렉션이름.drop()```
+```javascript
+db.컬렉션이름.drop()
+```
 
 ## 유틸
-```db.변경할 컬렉션명.renameCollection("새로운 컬렉션명")```
+```javascript
+db.변경할 컬렉션명.renameCollection("새로운 컬렉션명")
+```
 
 # Document에서 명령문
 
 ## 생성
-``` 
+```javascript 
 db.컬렉션명.insert(document)
 ```
 
@@ -58,7 +66,7 @@ db.person.find({"age" : {$lte : 30}}).pretty
 }
 ```
 ## 제거
-```
+```javascript
 db.컬렉션명.remove(criteria[, justOne])
 ```
 
@@ -73,15 +81,40 @@ db.컬렉션명.remove(criteria[, justOne])
 * $gte - (greater than or equals)주어진 값보다 크거나 같은 값.
 * $lt - (less than)주어진 값보다 작은 값.
 * $lte - (less than or equals)주어진 값보다 작거나 같은 값.
-* $ne - ()주어진 값과 일치하지 않는 값.
+* $ne - (not equals)주어진 값과 일치하지 않는 값.
 * $in  - 주어진 배열 안에 속하는 값.
 * $nin - 주어진 배열안에 속하지 않는 값.
+```javascript
+db.person.find({age : {$gt : 30 ,$lt : 50}}).pretty()
+```
+```
+{
+    name : homer,
+    age  : 45,
+    address  : springfield 
+}
+```
 
 ## 논리연산자
 * $or
 * $and
 * $not
 * $nor
+
+```
+db.person.find( { $and : [ { "age" : { $gt : 40 } } , { "address" : "springfield" } ] } )
+or
+db.person.find({"age" {$gt : 40}, "address" : "springfield"})
+```
+
+```
+{
+    name : homer,
+    age  : 45,
+    address  : springfield
+}
+```
+
 
 ## $where 연산자
 자바스크립트 표현식을 사용할 수 있다.
