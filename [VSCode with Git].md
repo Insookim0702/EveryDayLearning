@@ -8,7 +8,7 @@ git config --global user.email EMAILID@email.com
 
 # 3. vscode에서 ctrl + shife + p
 ![commend-input](https://user-images.githubusercontent.com/42515875/62140446-f3fb3800-b325-11e9-83ff-7c715a8fe163.png)
-# 4. 단축키가 눌리면 커멘드 창이 등장한다. 커멘드 창에 ``git clone``` 입력
+# 4. 단축키가 눌리면 커멘드 창이 등장한다. 커멘드 창에 ```git clone``` 입력
 # 5. 그 다음 커멘드 창에 ```깃의 레포지토리 주소``` 입력
 ![repogitory-address](https://user-images.githubusercontent.com/42515875/62140607-40df0e80-b326-11e9-833f-185951bb62de.png)
 ![input-repogitory-address](https://user-images.githubusercontent.com/42515875/62140711-6e2bbc80-b326-11e9-8c53-2b970ae56ae4.png)
