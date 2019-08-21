@@ -4,13 +4,16 @@
 
 
 # 1. database
+
 ## 1-1 데이터베이스 생성
 ```use 데이터베이스 명``` 으로 생성.
 한 개 이상의 collection이 있어야 조회했을 때 보임.
+
 ## 1-2 조회
   * db : 현재 사용 중인 데이터베이스 확인
   * show dbs : 데이터베이스 리스트 확인
   * db.stats() : 데이터베이스 상태 확인
+
 ## 1-3 제거
 ``` db.dropDatabase()```로 데이터베이스를 제거한다.
 제거 명령어 사용 전에 제거할 데이터 베이스에 스위치 한 후에 실행한다.
@@ -19,8 +22,9 @@ ex)
 ```db.dropDatabase()```
 
 # 2. collection
+
 ## 1-1 생성
-```db.createCollection(name, [options])으로 컬렉션을 생성한다.
+```db.createCollection(name, [options])```으로 컬렉션을 생성한다.
 [options]객체의 속성들
 * capped: Boolean타입. true로 하면 고전된 크기를 가진 컬렉션을 생성.
 * autoIndex : Boolean 타입. true로 하면 _id 필드에 index를 자동으로 생성한다. 삭제될 예정이라고 한다.
@@ -37,6 +41,7 @@ ex)
 # 3. documents
 ## 3-1 생성
 ```db.컬렉션명.insert(document)```
+
 ```
 db.movies.insert([
                   {"name" : "어벤저스", price : 13000},
