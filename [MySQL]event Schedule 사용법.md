@@ -1,12 +1,17 @@
 # event Schedule 생성 전 db 설정 변경
 ## 1. 이벤트 유무 확인 
 ```sql
+-- event scheduler 정보 확인
+SELECT * FROM information_schema.events;
+```
+
+
+## 2. 이벤트 스케줄 생성을 위한 설정 변경
+```sql
+
 -- event scheduler 상태 확인
 SHOW VARIABLES LIKE 'event%';
-```
-## 2. 이벤트 스케줄 생성을 위한 설정 변경
 
-```sql
 -- event scheduler ON/OFF
 SET GLOBAL event_scheduler =ON;
 SET GLOBAL event_scheduler =1;
