@@ -1,5 +1,5 @@
 # Vuetify란?
-* vue의 bootstrap처럼 만들어진 web 탬플릿을 가져다 사용.
+* bootstrap처럼 만들어진 web 탬플릿을 가져다 사용.
 * vue의 plug-in이다.
 * 무에서 유를 창조할 수 없다. 잘 만들어진 것만 잘 쓰자.
 * ```vue-cli```가 설치되어 있는 프로젝트에서만 적용이 가능하다.
