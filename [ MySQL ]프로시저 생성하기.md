@@ -28,17 +28,19 @@ DELIMITER $$
 
 ```
 
-# * 프로시저 삭제하기
+# 프로시저 삭제하기
 ```
 -- 프로시저 삭제하기
 DROP PROCEDURE IF EXISTS 프로시저이름$$
 ```
 
-# * 프로시저만 실행하기
+# 프로시저만 실행하기
 ```
 -- 프로시저만 실행하기
 CALL 프로시저 이름();
+```
 
+```
 ex)
 CALL extractFromExtdata_content();
 ```
