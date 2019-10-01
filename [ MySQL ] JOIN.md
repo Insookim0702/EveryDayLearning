@@ -31,7 +31,7 @@ prodect|price|vender_id
 ```sql
 SELECT vender, prodect, price  
 FROM tbl_vender
-INNDER JOIN tbl_prodect
+INNER JOIN tbl_prodect
 ON tbl_vender.vender_id = tbl_product.vender_id
 
 ```
