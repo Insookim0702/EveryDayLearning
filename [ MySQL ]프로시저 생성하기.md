@@ -1,7 +1,7 @@
 # MySQL 프로시저 생성하기
 ```
-
 -- 프로시저 생성
+
 DELIMITER $$
 CREATE PROCEDURE 프로시저이름()
 BEGIN
